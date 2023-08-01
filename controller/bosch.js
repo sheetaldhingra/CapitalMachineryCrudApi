@@ -1,4 +1,4 @@
-const Product = require("../models/product");
+const Product = require("../models/bosch");
 const connectDB = require("../db/connect");
 const ProductJson = require("../products.json");
 
