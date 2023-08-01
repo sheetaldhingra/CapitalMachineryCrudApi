@@ -6,6 +6,7 @@ const app = express();
 const PORT = process.env.PORT || 5000;
 const connectDB = require('./db/connect');
 const products_routes = require("./routes/products");
+const bosch_routes = require("./routes/bosch");
 const machines_routes = require("./routes/machines");
 const email_routes = require("./routes/sendEmail");
 const cors = require("cors");
@@ -21,6 +22,7 @@ app.get("/",(req,res)=>{
 app.use(bodyParser.urlencoded({ limit: '50mb',parameterLimit: 100000, extended: true }));
 app.use(bodyParser.json({ limit: '50mb' }));
 app.use("/api/products",products_routes);
+app.use("/api/bosch",bosch_routes);
 app.use("/api/machines",machines_routes);
 app.use("/api/email",email_routes);
 
