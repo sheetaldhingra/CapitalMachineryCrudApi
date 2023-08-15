@@ -91,19 +91,19 @@ const sendEmail = expressAsyncHandler(async (req,res)=>{
       </style>
     </head>
     <body>
-      <div class="container">
-        <div class="header">
+      <div className="container">
+        <div className="header">
           <h1>Thank you for your inquiry!</h1>
         </div>
-        <div class="thank-you">
+        <div className="thank-you">
           <p>Dear ${name},</p>
           <p>Thank you for reaching out to V.P.S. Engineering Corporation through our website. We greatly appreciate your interest in our products/services and the opportunity to assist you.</p>
         </div>
-        <div class="details">
+        <div className="details">
           <p>Our team is excited to help address your query and provide you with the information you need. We are currently reviewing your request and will respond promptly with the relevant details.</p>
           <p>As a customer-focused company, we understand the importance of a timely response. Rest assured, we will get back to you within 24-48 hrs with a comprehensive solution tailored to your needs.</p>
         </div>
-        <div class="closing">
+        <div className="closing">
           <p>Thank you again for considering V.P.S. Engineering Corporation. We look forward to the possibility of working with you and exceeding your expectations.</p>
           <p>Best regards,</p>
           <p>V.P.S. Engineering Corporation</p>
