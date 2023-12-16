@@ -20,7 +20,7 @@ const getAllDuraProducts = async (req, res) => {
 };
 const getAllDuraProductsTesting = async (req, res) => {
   const myData =
-    sort != ""
+    sort !== ""
       ? await Product.find(req.query).sort(sort)
       : await Product.find(req.query).sort(sort).select("title");
   res.status(200).json({ myData });

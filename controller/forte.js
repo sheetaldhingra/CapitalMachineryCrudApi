@@ -20,7 +20,7 @@ const getAllForteProducts = async (req, res) => {
 };
 const getAllForteProductsTesting = async (req, res) => {
   const myData =
-    sort != ""
+    sort !== ""
       ? await Product.find(req.query).sort(sort)
       : await Product.find(req.query).sort(sort).select("title");
   res.status(200).json({ myData });
